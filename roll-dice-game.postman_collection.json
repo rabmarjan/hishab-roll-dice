@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "8c5efee3-9d0a-43c2-a400-e6f982defab1",
+		"name": "roll-dice-game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6291130"
+	},
+	"item": [
+		{
+			"name": "create-player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 2,\"name\": \"Sharif\", \"age\": 29}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roll-dice/api/v1/create-player",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roll-dice",
+						"api",
+						"v1",
+						"create-player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "start-game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Sharif\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/roll-dice/api/v1/game-start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roll-dice",
+						"api",
+						"v1",
+						"game-start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current-score",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/roll-dice/api/v1/current-score",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roll-dice",
+						"api",
+						"v1",
+						"current-score"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
