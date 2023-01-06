@@ -35,3 +35,5 @@ curl --header "Content-Type: application/json" \
 --request GET \
 http://localhost:8080/roll-dice/api/v1/current-score
 ```
+
+![swagger ui](swagger.png)
