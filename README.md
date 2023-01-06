@@ -35,5 +35,7 @@ curl --header "Content-Type: application/json" \
 --request GET \
 http://localhost:8080/roll-dice/api/v1/current-score
 ```
+## Swagger url
+http://localhost:8080/roll-dice/swagger-ui/index.html
 
 ![swagger ui](swagger.png)
